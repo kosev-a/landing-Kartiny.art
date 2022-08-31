@@ -4,7 +4,7 @@ const filter = () => {
         portfolioBlock = document.querySelectorAll('.portfolio-block'),
         no = document.querySelector('.portfolio-no');
 
-    function bindActionToBtn(markType) {
+    function typeFilter(markType) {
         const btn = menu.querySelector('.' + markType);
         btn.addEventListener('click', () => {
             portfolioBlock.forEach(mark => {
@@ -34,13 +34,13 @@ const filter = () => {
 
     }
 
-    bindActionToBtn('all');
-    bindActionToBtn('lovers');
-    bindActionToBtn('chef');
-    bindActionToBtn('girl');
-    bindActionToBtn('guy');
-    bindActionToBtn('grandmother');
-    bindActionToBtn('granddad');
+    typeFilter('all');
+    typeFilter('lovers');
+    typeFilter('chef');
+    typeFilter('girl');
+    typeFilter('guy');
+    typeFilter('grandmother');
+    typeFilter('granddad');
 
     menu.addEventListener('click', (e) => {
         let target = e.target;
@@ -52,9 +52,6 @@ const filter = () => {
             target.classList.add('active');
         }
     });
-
-
-
 
 };
 

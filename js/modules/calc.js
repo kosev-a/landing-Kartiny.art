@@ -29,7 +29,7 @@ const calc = (size, material, options, promocode, result, state) => {
         }
 
         state['sum'] = sum;
-        console.log(state);
+        // console.log(state);
     }
 
     function bindActionToElem (event, elem) {
