@@ -5,7 +5,7 @@ const burger = (menuSelector, burgerSelector) => {
     menuElem.style.display = 'none';
 
     burgerElem.addEventListener('click', () => {
-        if (menuElem.style.display == "none" && window.screen.availWidth < 993) {
+        if (menuElem.style.display == 'none' && document.documentElement.scrollWidth < 993) {
             menuElem.style.display = 'block';
         } else {
             menuElem.style.display = 'none';
@@ -13,7 +13,7 @@ const burger = (menuSelector, burgerSelector) => {
     });
 
     window.addEventListener('resize', () => {
-        if (window.screen.availWidth > 992) {
+        if (document.documentElement.scrollWidth > 992) {
             menuElem.style.display = 'none';
         }
     });

@@ -100,7 +100,7 @@ h4 {
 }
 .fixed-gift {
   position: fixed;
-  z-index: 19;
+  z-index: 100;
   display: inline;
   top: 4rem;
   right: 2rem;
@@ -187,6 +187,7 @@ h4 {
   margin-left: 1rem;
 }
 .header .burger-menu {
+  display: none;
   position: absolute;
   background-color: #fff;
   z-index: 10;
@@ -1271,6 +1272,20 @@ h4 {
 
 .status {
   text-align: center;
+}
+
+.pageup {
+  opacity: 0;
+  width: 26px ;
+  height: 26px;
+  position: fixed;
+  bottom: 100px;
+  right: 5rem;
+  z-index: 10;
+  cursor: pointer;
+  fill: #337AB7;
+  transform: rotate(270deg);
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
 }
 
 @media (max-width: 1399px) {
